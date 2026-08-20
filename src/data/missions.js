@@ -1,0 +1,36 @@
+export const missions = [
+  { id: 'm1', programId: 'p1', day: 1, title: 'Setup & Git basics', description: 'Install your dev environment and make your first commit.', completed: true },
+  { id: 'm2', programId: 'p1', day: 2, title: 'HTML foundations', description: 'Build a semantic single-page profile.', completed: true },
+  { id: 'm3', programId: 'p1', day: 3, title: 'CSS layout', description: 'Recreate a card layout with flexbox.', completed: true },
+  { id: 'm4', programId: 'p1', day: 4, title: 'Responsive design', description: 'Add two breakpoints to your profile page.', completed: true },
+  { id: 'm5', programId: 'p1', day: 5, title: 'JavaScript basics', description: 'Add interactivity to a button and a list.', completed: true },
+  { id: 'm6', programId: 'p1', day: 6, title: 'DOM manipulation', description: 'Build a simple to-do list in vanilla JS.', completed: true },
+  { id: 'm7', programId: 'p1', day: 7, title: 'Build: landing page', description: 'Ship your first complete landing page.', completed: true },
+  { id: 'm8', programId: 'p1', day: 8, title: 'JS arrays & objects', description: 'Practice with real data shapes.', completed: true },
+  { id: 'm9', programId: 'p1', day: 9, title: 'Fetch & APIs', description: 'Pull data from a public API.', completed: true },
+  { id: 'm10', programId: 'p1', day: 10, title: 'Forms & validation', description: 'Build a validated signup form.', completed: true },
+  { id: 'm11', programId: 'p1', day: 11, title: 'Intro to React', description: 'Set up your first Vite + React project.', completed: true },
+  { id: 'm12', programId: 'p1', day: 12, title: 'React fundamentals', description: 'Components, props, and state.', completed: true },
+  { id: 'm13', programId: 'p1', day: 13, title: 'React hooks', description: 'useState and useEffect in practice.', completed: true },
+  { id: 'm14', programId: 'p1', day: 14, title: 'Component architecture', description: 'Break a page into reusable components.', completed: true },
+  { id: 'm15', programId: 'p1', day: 15, title: 'Build Your First API', description: 'Create a REST endpoint that returns JSON.', completed: true },
+  { id: 'm16', programId: 'p1', day: 16, title: 'React Router basics', description: 'Add multi-page navigation.', completed: true },
+  { id: 'm17', programId: 'p1', day: 17, title: 'State management', description: 'Share state across components.', completed: true },
+  { id: 'm18', programId: 'p1', day: 18, title: 'REST APIs', description: 'Connect your frontend to a live API.', completed: true },
+  { id: 'm19', programId: 'p1', day: 19, title: 'Styling systems', description: 'Set up Tailwind in your project.', completed: true },
+  { id: 'm20', programId: 'p1', day: 20, title: 'Auth basics', description: 'Add a simple login flow.', completed: false },
+  { id: 'm21', programId: 'p1', day: 21, title: 'Django setup', description: 'Scaffold your backend project.', completed: false },
+  { id: 'm22', programId: 'p1', day: 22, title: 'Models & migrations', description: 'Design your first database schema.', completed: false },
+  { id: 'm23', programId: 'p1', day: 23, title: 'Django REST views', description: 'Build your first serializer.', completed: false },
+  { id: 'm24', programId: 'p1', day: 24, title: 'Django backend', description: 'Connect models, views, and a real database.', completed: false },
+  { id: 'm25', programId: 'p1', day: 25, title: 'Connect frontend to backend', description: 'Wire React up to your Django API.', completed: false },
+  { id: 'm26', programId: 'p1', day: 26, title: 'Polish & bug fixes', description: 'Clean up edge cases.', completed: false },
+  { id: 'm27', programId: 'p1', day: 27, title: 'Write documentation', description: 'A README anyone could follow.', completed: false },
+  { id: 'm28', programId: 'p1', day: 28, title: 'Prepare for deploy', description: 'Environment variables and build checks.', completed: false },
+  { id: 'm29', programId: 'p1', day: 29, title: 'Deploy staging', description: 'Get it live on a test URL.', completed: false },
+  { id: 'm30', programId: 'p1', day: 30, title: 'Deploy day', description: 'Ship your project to the world.', completed: false },
+]
+
+export const getMissionsForProgram = (programId) => missions.filter((m) => m.programId === programId)
+export const getTodayMission = (programId, day) =>
+  missions.find((m) => m.programId === programId && m.day === day)
